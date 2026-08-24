@@ -178,6 +178,8 @@ def resumer(depeches):
     if not cle:
         raise SystemExit("Variable d'environnement GEMINI_API_KEY absente.")
 
+    print(f"Clé détectée : {len(cle)} caractères, préfixe {cle[:3]}", flush=True)
+
     payload = {
         "contents": [{
             "parts": [{"text": PROMPT.format(depeches=depeches)}]
@@ -188,22 +190,22 @@ def resumer(depeches):
         },
     }
 
-    for tentative in range(3):
-        reponse = requests.post(
-            GEMINI_URL,
-            headers={"x-goog-api-key": cle, "Content-Type": "application/json"},
-            json=payload,
-            timeout=120,
-        )
-        if reponse.status_code == 200:
-            data = reponse.json()
-            return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+    reponse = requests.post(
+        GEMINI_URL,
+        headers={"x-goog-api-key": cle, "Content-Type": "application/json"},
+        json=payload,
+        timeout=120,
+    )
 
-        print(f"  [!] API {reponse.status_code}, nouvelle tentative...", file=sys.stderr)
-        time.sleep(5 * (tentative + 1))
+    print(f"Code HTTP : {reponse.status_code}", flush=True)
 
-    raise SystemExit(f"Échec de l'API après 3 tentatives : {reponse.text[:400]}")
+    if reponse.status_code != 200:
+        print("Réponse complète de l'API :", flush=True)
+        print(reponse.text[:1500], flush=True)
+        raise SystemExit("Appel API échoué.")
 
+    data = reponse.json()
+    return data["candidates"][0]["content"]["parts"][0]["text"].strip()
 
 # --------------------------------------------------------------------------
 # 3. Écriture et envoi
