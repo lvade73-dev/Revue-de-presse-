@@ -33,7 +33,7 @@ DOSSIER_SORTIE = Path("briefs")
 
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-2.0-flash:generateContent"
+    "gemini-3.6-flash:generateContent"
 )
 
 PROMPT = """Tu es rédacteur en chef d'une revue de presse internationale quotidienne.
