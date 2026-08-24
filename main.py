@@ -186,7 +186,7 @@ def resumer(depeches):
         }],
         "generationConfig": {
             "temperature": 0.3,
-            "maxOutputTokens": 4000,
+            "maxOutputTokens": 16000,
         },
     }
 
@@ -205,8 +205,12 @@ def resumer(depeches):
         raise SystemExit("Appel API échoué.")
 
     data = reponse.json()
-    return data["candidates"][0]["content"]["parts"][0]["text"].strip()
-
+    candidat = data["candidates"][0]
+    raison = candidat.get("finishReason", "?")
+    print(f"finishReason : {raison}", flush=True)
+    if raison not in ("STOP", "?"):
+        print(f"[!] Réponse interrompue ({raison})", flush=True)
+    return candidat["content"]["parts"][0]["text"].strip()
 # --------------------------------------------------------------------------
 # 3. Écriture et envoi
 # --------------------------------------------------------------------------
