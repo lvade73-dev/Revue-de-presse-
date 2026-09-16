@@ -1,49 +1,51 @@
-# Revue de presse — 15/09/2026
+# Revue de presse — 16/09/2026
 
-*Généré le 15/09/2026 à 07:42 à partir de 139 dépêches.*
+*Généré le 16/09/2026 à 07:40 à partir de 137 dépêches.*
 
 ---
 
 ## À retenir
 
-- La Cour suprême des États-Unis a rejeté la demande d'urgence de Donald Trump visant à restreindre le vote par correspondance avant les élections de mi-mandat.
-- Le Pentagone a reconnu pour la première fois une pénurie dans ses stocks de munitions stratégiques en raison des opérations militaires menées en Iran.
-- Au Yémen, les rebelles houthis ont intensifié leur contrôle sur la côte de la mer Rouge et le détroit stratégique de Bab el-Mandeb.
-- L'entreprise nigériane Dangote a lancé la plus importante introduction en Bourse de l'histoire du continent africain pour sa raffinerie.
-- L'Otan a abattu un drone non identifié entré dans l'espace aérien lituanien depuis la Biélorussie.
+- Le Pentagone a reconnu que les opérations militaires contre l'Iran provoquent une pénurie stratégique de munitions pour l'armée américaine.
+- Les autorités de République démocratique du Congo affirment que l'épidémie d'Ebola a atteint son pic après avoir fait plus de 3 500 morts.
+- La Cour suprême des États-Unis a rejeté les restrictions sur le vote par correspondance souhaitées par Donald Trump.
+- À Gaza, l'effondrement d'un immeuble endommagé par des frappes a fait au moins huit morts et des dizaines de disparus.
+- Un drone chargé d'explosifs a été abattu par l'Otan dans l'espace aérien de la Lituanie.
 
 ## Europe
 
-- **Un drone abattu par l'Otan dans l'espace aérien lituanien** — Un drone en provenance probable de la Biélorussie a été intercepté et abattu au-dessus du territoire lituanien par des avions de l'Otan. Le président lituanien a réaffirmé la détermination de l'Alliance à défendre l'espace aérien de la région. ([BBC World](https://www.bbc.co.uk/news/articles/cjx2zgk7edlzo?at_medium=RSS&at_campaign=rss))
+- **Incursion d'un drone en Lituanie** — Un drone militaire chargé d'explosifs a été abattu par l'Otan au-dessus du territoire lituanien. Les autorités de défense du pays procèdent actuellement à l'examen de l'appareil. ([RTBF Info](https://www.rtbf.be/article/un-drone-charge-d-explosifs-a-ete-abattu-par-l-otan-dans-l-espace-aerien-lituanien-11785820))
 
-- **Ouverture de la phase finale du procès des anciens dirigeants de l'UÇK** — Le tribunal spécial de La Haye s'apprête à rendre son verdict dans le procès de plusieurs anciens chefs de l'Armée de libération du Kosovo jugés pour crimes de guerre. Cette décision intervient vingt-sept ans après la fin du conflit kosovar. ([RFI Monde](https://www.rfi.fr/fr/podcasts/grand-reportage/20260914-h%C3%A9ros-ou-criminels-les-leaders-de-l-uck-face-aux-juges))
+- **Suspension des livraisons de gaz russe à l'Arménie** — La Russie a interrompu ses livraisons de gaz naturel à l'Arménie jusqu'au 25 septembre. Cette décision survient alors qu'Erevan multiplie les démarches pour se rapprocher de l'Union européenne. ([Le Monde](https://www.lemonde.fr/international/article/2026/09/16/la-russie-suspend-ses-livraisons-de-gaz-naturel-a-l-armenie_6774959_3210.html))
+
+- **Procès pour corruption de Rachida Dati et Carlos Ghosn** — L'ancienne ministre française comparaît devant le tribunal correctionnel de Paris pour corruption et trafic d'influence en lien avec 900 000 euros d'honoraires versés par Renault-Nissan. L'ancien PDG du groupe automobile, également poursuivi, est jugé en son absence car toujours réfugié au Liban. ([France Info](https://www.franceinfo.fr/politique/rachida-dati/six-questions-sur-le-proces-pour-corruption-de-rachida-dati-et-carlos-ghosn-ex-pdg-de-renault_8193776.html#xtor=RSS-3-[lestitres]))
 
 ## Afrique
 
-- **Lancement de la plus grande introduction en Bourse africaine au Nigeria** — Le groupe Dangote a mis sur le marché plus de quatre milliards d'actions de sa raffinerie à la Bourse de Lagos, visant à lever environ 1,4 milliard de dollars. L'opération pourrait porter la fortune personnelle d'Aliko Dangote à près de 60 milliards de dollars. ([The Guardian World](https://www.theguardian.com/world/2026/sep/14/aliko-dangote-nigeria-africa-richest-man-ipo))
+- **Le pic de l'épidémie d'Ebola atteint en RDC** — Les autorités de RDC ont annoncé une décélération des nouvelles infections d'Ebola, quatre mois après le début de l'épidémie. Le bilan s'élève à plus de 7 200 cas confirmés et au moins 3 500 décès, l'épicentre restant la province de l'Ituri. ([The Guardian World](https://www.theguardian.com/global-development/2026/sep/15/ebola-outbreak-in-drc-has-peaked-say-authorities-as-infection-rates-slow))
 
-- **L'épidémie d'Ebola en République démocratique du Congo aurait atteint son pic** — Les autorités sanitaires congolaises ont annoncé un ralentissement des contaminations par le virus Ebola, suggérant que le sommet de l'épidémie a été franchi. L'épidémie a causé la mort de près de 3 500 personnes depuis son apparition. ([The Guardian World](https://www.theguardian.com/global-development/2026/sep/15/ebola-outbreak-in-drc-has-peaked-say-authorities-as-infection-rates-slow))
+- **Violences lors d'une marche de l'opposition à Kinshasa** — Une manifestation organisée contre un projet de révision de la Constitution a tourné aux affrontements avec la police et des groupes hostiles dans la capitale congolaise. Plusieurs figures de l'opposition ont été blessées et accusent le gouvernement d'avoir orchestré un piège. ([Jeune Afrique](https://www.jeuneafrique.com/1843551/politique/tshisekedi-nous-a-tendu-un-guet-apens-en-rdc-la-mobilisation-de-lopposition-degenere/))
 
-- **Attaque meurtrière contre l'armée malienne et des auxiliaires russes à Dioura** — Un assaut mené par des groupes djihadistes contre un camp militaire dans le centre du Mali a coûté la vie à plusieurs dizaines de soldats maliens et au moins cinq membres du groupe paramilitaire russe Africa Corps. Plus de cinquante militaires ont également été capturés lors de cet affrontement. ([RFI Afrique](https://www.rfi.fr/fr/afrique/20260914-mali-au-moins-5-soldats-du-groupe-paramilitaire-russe-africa-corps-tu%C3%A9s-lors-de-l-attaque-de-dioura))
+- **Restrictions américaines de visages contre des responsables sud-africains** — Les États-Unis ont décidé d'imposer des restrictions de visa à des ressortissants sud-africains accusés par Washington de pratiquer des discriminations raciales, notamment contre la minorité blanche afrikaner. Pretoria rejette fermement ces accusations. ([RFI Afrique](http://www.rfi.fr/fr/am%C3%A9riques/20260916-afrique-du-sud-washington-annonce-des-restrictions-de-visa-%C3%A9voquant-des-discriminations-raciales))
 
 ## Amériques
 
-- **La Cour suprême américaine rejette les restrictions sur le vote par correspondance** — La plus haute juridiction des États-Unis a refusé d'appliquer en urgence le décret de Donald Trump restreignant le vote par la poste à six semaines des élections de mi-mandat. Les juges ont estimé qu'une modification si proche du scrutin risquait de perturber les opérations électorales. ([Le Monde](https://www.lemonde.fr/international/article/2026/09/15/donald-trump-voit-son-projet-de-restriction-du-vote-par-correspondance-rejete-par-la-cour-supreme-a-six-semaines-des-midterms_6774151_3211.html))
+- **Pénurie stratégique de munitions admise par le Pentagone** — Le ministère américain de la Défense a reconnu que sept mois d'opérations militaires contre l'Iran ont créé des goulets d'étranglement industriels et un manque important de munitions. Le coût global des interventions américaines dans cette guerre dépasse désormais 33 milliards de dollars. ([France 24 Amériques](http://www.france24.com/fr/am%C3%A9riques/20260915-%C3%A9tats-unis-manque-munitions-guerre-iran-pentagone-defense))
 
-- **Le Pentagone confirme une pénurie de munitions liée aux opérations en Iran** — Le ministère américain de la Défense a reconnu dans un rapport officiel que les interventions militaires récentes en Iran ont entraîné des déficits majeurs dans ses stocks stratégiques. Cette déclaration contredit les précédentes affirmations de la Maison Blanche quant à l'abondance des réserves d'armement. ([Le Monde](https://www.lemonde.fr/international/article/2026/09/15/etats-unis-le-pentagone-reconnait-une-penurie-de-munitions-consecutive-a-la-guerre-en-iran_6774321_3210.html))
+- **La Cour suprême rejette les limites sur le vote par correspondance** — La plus haute instance judiciaire américaine a refusé de valider les restrictions souhaitées par Donald Trump sur le vote postal avant les élections de mi-mandat. La décision maintient les dispositions électorales existantes dans plusieurs États clés. ([NPR World](https://www.npr.org/2026/09/15/g-s1-143294/up-first-newsletter-bernie-sanders-steve-bannon-ai-mail-in-ballots-kennedy-center-emmys))
 
-- **Tensions et débats autour de la régulation de l'intelligence artificielle** — Plusieurs dirigeants d'entreprises technologiques majeures ont appelé à ralentir le rythme de développement de l'IA pour renforcer la sécurité et prévenir les risques majeurs. En réaction, Donald Trump a fermement rejeté ces inquiétudes, qualifiant les demandes de moratoire de « conspiration ». ([France 24 Amériques](https://www.france24.com/fr/am%C3%A9riques/20260914-trump-d%C3%A9nonce-les-forces-n%C3%A9gatives-voulant-ralentir-le-d%C3%A9veloppement-de-l-ia))
+- **Le Canada amorce un rapprochement stratégique avec l'UE** — Le Premier ministre canadien a affirmé son intention d'établir une alliance économique et de sécurité renforcée avec l'Union européenne lors du Sommet canadien de l'investissement. Cette démarche intervient dans un contexte de détérioration des relations commerciales avec les États-Unis. ([The Guardian World](https://www.theguardian.com/world/2026/sep/15/canada-eu-economic-alliance))
 
 ## Moyen-Orient
 
-- **Les Houthis prennent le contrôle de zones clés près du détroit de Bab el-Mandeb** — Les insurgés yéménites ont conquis l'archipel d'Hanish et plusieurs secteurs côtiers stratégiques après le retrait des forces gouvernementales. Cette avancée accroît la pression sur le trafic maritime international et les infrastructures pétrolières d'Arabie saoudite. ([Euronews](https://fr.euronews.com/2026/09/14/les-houthis-prennent-de-nouvelles-iles-de-la-mer-rouge-resserrant-letau-sur-bab-el-mandeb))
+- **Effondrement d'un immeuble à Gaza et poursuite des ventes d'armes américaines** — Au moins huit personnes ont péri et des dizaines sont portées disparues après la chute d'un bâtiment résidentiel endommagé par des frappes antérieures à Gaza City. En parallèle, l'administration américaine prépare une nouvelle vente de bombes de 2 000 livres à Israël pour un montant de 2,8 milliards de dollars. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/16/gaza-residential-building-collapses-six-families-reportedly-trapped?traffic_source=rss))
 
-- **Un rapport dénonce l'augmentation des violences des colons en Cisjordanie** — L'organisation israélienne B'Tselem affirme que les actions des colons visant les civils palestiniens cherchent à éradiquer leur présence dans plusieurs zones de Cisjordanie. Selon l'ONU, ces attaques font en moyenne trois blessés palestiniens par jour. ([Al Jazeera](https://www.aljazeera.com/video/newsfeed/2026/9/15/15-09-reported-west-bank-report-btselem-ps))
+- **Attaque revendiquée par Riyad d'un drone Houthi près de La Mecque** — La coalition sous commandement saoudien a affirmé avoir détruit un drone ciblant la ville sainte de La Mecque. Les rebelles Houthis du Yémen ont formellement démenti avoir mené cette tentative d'attaque. ([Radio-Canada Intl](https://ici.radio-canada.ca/nouvelle/2284189/arabie-saoudite-houthis-drone-la-mecque))
+
+- **Pétrolier touché dans le détroit d'Ormuz** — Un navire-citerne a pris feu dans le détroit d'Ormuz, laissant deux marins disparus. Téhéran affirme que le bâtiment a heurté des mines, tandis que les États-Unis soutiennent qu'il a été ciblé par un missile puis un drone. ([BBC World](https://www.bbc.co.uk/news/articles/c3n07ydqdzlvo?at_medium=RSS&at_campaign=rss))
 
 ## Asie
 
-- **Près de 1 400 morts et des milliers de disparus après une coulée de boue au Népal** — Les secours tentent de retrouver plus de 5 000 personnes portées disparues à la suite d'un glissement de terrain et d'une coulée de glace dévastatrice dans le nord du pays. Le bilan s'élève à au moins 1 400 morts, dont 600 ressortissants étrangers. ([France 24 Asie](https://www.france24.com/fr/%C3%A9missions/focus/20260914-n%C3%A9pal-des-milliers-de-disparus-et-des-corps-%C3%A0-identifier))
+- **Le Congrès américain fait avancer des sanctions menaçant l'Inde** — La Chambre des représentants a validé l'examen d'un projet de loi imposant des tarifs douaniers de 100 % sur les pays conservant des échanges commerciaux importants avec la Russie. L'Inde est directement visée par ce texte qui doit faire l'objet d'un vote définitif. ([The Hindu International](https://www.thehindu.com/news/international/russia-sanctions-bill-advances-in-us-house-india-tariffs-final-vote/article71470877.ece))
 
-- **Poursuite des recherches après le naufrage d'un ferry en Indonésie** — Au moins six personnes ont péri et 129 demeurent portées disparues en mer de Java suite au chavirage d'un navire transportant plus de 240 passagers et membres d'équipage. D'importants moyens maritimes et aériens ont été déployés pour localiser d'éventuels survivants. ([NPR World](https://www.npr.org/2026/09/14/nx-s1-5968417/indonesia-search-missing-ferry))
-
-- **Dégradation de la qualité de l'air à Singapour en raison d'incendies en Indonésie** — L'ensemble du territoire singapourien a enregistré des niveaux de pollution atmosphérique élevés. Ce phénomène d'épais brouillard est provoqué par la propagation d'incendies de forêt en Indonésie voisine. ([South China Morning Post](https://www.scmp.com/news/asia/southeast-asia/article/3367527/air-quality-across-singapore-reaches-unhealthy-levels-indonesian-wildfires))
+- **Rapport d'ONG sur la torture continue dans les prisons chinoises** — Selon une étude publiée par l'organisation Chinese Human Rights Defenders, l'usage de la torture persiste de manière systématique dans les centres de détention chinois. Les prisonniers de conscience constitueraient les cibles principales de ces exactions. ([Le Monde](https://www.lemonde.fr/international/article/2026/09/16/chine-la-torture-se-poursuit-dans-les-prisons-rapporte-une-ong_6774785_3210.html))
