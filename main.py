@@ -183,9 +183,9 @@ def resumer(depeches):
     }
 
     base = "https://generativelanguage.googleapis.com/v1beta/models/"
-    modeles = ["gemini-3.6-flash", "gemini-2.5-flash"]
-    attentes = [15, 45, 90, 180]
-
+    modeles = ["gemini-3.8-flash", "gemini-3.6-flash"]
+    attentes = [10, 30, 60]
+    
     for modele in modeles:
         for essai, pause in enumerate(attentes, start=1):
             reponse = requests.post(
