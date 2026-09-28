@@ -3,7 +3,7 @@ name: Revue de presse quotidienne
 on:
   schedule:
     # 05:30 UTC = 07:30 heure de Paris en été, 06:30 en hiver
-   - cron: "17 4 * * *"
+    - cron: "42 3 * * *"
   workflow_dispatch:        # permet de lancer manuellement depuis l'onglet Actions
 
 permissions:
