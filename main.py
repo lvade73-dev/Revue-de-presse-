@@ -171,49 +171,74 @@ def formater_depeches(collecte):
 # --------------------------------------------------------------------------
 # 2. Résumé par LLM
 # --------------------------------------------------------------------------
+def _appel_gemini(cle, modele, prompt):
+    r = requests.post(
+        f"https://generativelanguage.googleapis.com/v1beta/models/{modele}:generateContent",
+        headers={"x-goog-api-key": cle, "Content-Type": "application/json"},
+        json={
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.3, "maxOutputTokens": 16000},
+        },
+        timeout=120,
+    )
+    if r.status_code == 200:
+        return r.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+    return None if r.status_code in (429, 500, 502, 503, 504) else _fatal(r)
+
+
+def _appel_groq(cle, modele, prompt):
+    r = requests.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        headers={"Authorization": f"Bearer {cle}", "Content-Type": "application/json"},
+        json={
+            "model": modele,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.3,
+            "max_tokens": 16000,
+        },
+        timeout=180,
+    )
+    if r.status_code == 200:
+        return r.json()["choices"][0]["message"]["content"].strip()
+    return None if r.status_code in (429, 500, 502, 503, 504) else _fatal(r)
+
+
+def _fatal(r):
+    print(f"Erreur non récupérable {r.status_code} : {r.text[:500]}", flush=True)
+    return "STOP"
+
+
 def resumer(depeches):
-    """Appelle l'API Gemini, avec réessais et modèle de secours."""
-    cle = os.environ.get("GEMINI_API_KEY")
-    if not cle:
-        raise SystemExit("Variable d'environnement GEMINI_API_KEY absente.")
+    """Essaie Gemini puis Groq, avec réessais sur chaque modèle."""
+    prompt = PROMPT.format(depeches=depeches)
+    cle_gemini = os.environ.get("GEMINI_API_KEY")
+    cle_groq = os.environ.get("GROQ_API_KEY")
 
-    payload = {
-        "contents": [{"parts": [{"text": PROMPT.format(depeches=depeches)}]}],
-        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 16000},
-    }
+    tentatives = []
+    if cle_gemini:
+        tentatives += [("gemini", cle_gemini, m)
+                       for m in ("gemini-3.8-flash", "gemini-3.6-flash")]
+    if cle_groq:
+        tentatives += [("groq", cle_groq, m)
+                       for m in ("openai/gpt-oss-120b", "llama-3.3-70b-versatile")]
 
-    base = "https://generativelanguage.googleapis.com/v1beta/models/"
-    modeles = ["gemini-3.8-flash", "gemini-3.6-flash"]
-    attentes = [10, 30, 60]
-    
-    for modele in modeles:
-        for essai, pause in enumerate(attentes, start=1):
-            reponse = requests.post(
-                base + modele + ":generateContent",
-                headers={"x-goog-api-key": cle, "Content-Type": "application/json"},
-                json=payload,
-                timeout=120,
-            )
+    if not tentatives:
+        raise SystemExit("Aucune clé API disponible.")
 
-            if reponse.status_code == 200:
-                candidat = reponse.json()["candidates"][0]
-                print(f"OK via {modele} (essai {essai})", flush=True)
-                return candidat["content"]["parts"][0]["text"].strip()
-
-            print(f"{modele} essai {essai} : HTTP {reponse.status_code}", flush=True)
-
-            # 503/429 = surcharge passagère, on réessaie. Autre code = inutile d'insister.
-            if reponse.status_code not in (429, 500, 502, 503, 504):
-                print(reponse.text[:800], flush=True)
+    for fournisseur, cle, modele in tentatives:
+        appel = _appel_gemini if fournisseur == "gemini" else _appel_groq
+        for essai, pause in enumerate([10, 30, 60], start=1):
+            resultat = appel(cle, modele, prompt)
+            if resultat == "STOP":
                 break
-
-            if essai < len(attentes):
+            if resultat:
+                print(f"OK via {modele} (essai {essai})", flush=True)
+                return resultat
+            print(f"{modele} essai {essai} : indisponible", flush=True)
+            if essai < 3:
                 time.sleep(pause)
 
-        print(f"Bascule vers le modèle suivant.", flush=True)
-
-    raise SystemExit("Tous les modèles ont échoué.")
-
+    raise SystemExit("Tous les fournisseurs ont échoué.")
 
 # --------------------------------------------------------------------------
 # 3. Écriture et envoi
