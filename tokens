@@ -219,8 +219,8 @@ def resumer(depeches):
         tentatives += [("gemini", cle_gemini, m)
                        for m in ("gemini-3.8-flash", "gemini-3.6-flash")]
     if cle_groq:
-        tentatives += [("groq", cle_groq, m)
-                       for m in ("openai/gpt-oss-120b", "llama-3.3-70b-versatile")]
+         tentatives += [("groq", cle_groq, m)
+                       for m in ("openai/gpt-oss-120b", "openai/gpt-oss-20b")]
 
     if not tentatives:
         raise SystemExit("Aucune clé API disponible.")
