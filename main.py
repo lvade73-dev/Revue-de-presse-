@@ -171,46 +171,50 @@ def formater_depeches(collecte):
 # --------------------------------------------------------------------------
 # 2. Résumé par LLM
 # --------------------------------------------------------------------------
-
 def resumer(depeches):
-    """Appelle l'API Gemini et retourne le Markdown produit."""
+    """Appelle l'API Gemini, avec réessais et modèle de secours."""
     cle = os.environ.get("GEMINI_API_KEY")
     if not cle:
         raise SystemExit("Variable d'environnement GEMINI_API_KEY absente.")
 
-    print(f"Clé détectée : {len(cle)} caractères, préfixe {cle[:3]}", flush=True)
-
     payload = {
-        "contents": [{
-            "parts": [{"text": PROMPT.format(depeches=depeches)}]
-        }],
-        "generationConfig": {
-            "temperature": 0.3,
-            "maxOutputTokens": 16000,
-        },
+        "contents": [{"parts": [{"text": PROMPT.format(depeches=depeches)}]}],
+        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 16000},
     }
 
-    reponse = requests.post(
-        GEMINI_URL,
-        headers={"x-goog-api-key": cle, "Content-Type": "application/json"},
-        json=payload,
-        timeout=120,
-    )
+    base = "https://generativelanguage.googleapis.com/v1beta/models/"
+    modeles = ["gemini-3.6-flash", "gemini-2.5-flash"]
+    attentes = [15, 45, 90, 180]
 
-    print(f"Code HTTP : {reponse.status_code}", flush=True)
+    for modele in modeles:
+        for essai, pause in enumerate(attentes, start=1):
+            reponse = requests.post(
+                base + modele + ":generateContent",
+                headers={"x-goog-api-key": cle, "Content-Type": "application/json"},
+                json=payload,
+                timeout=120,
+            )
 
-    if reponse.status_code != 200:
-        print("Réponse complète de l'API :", flush=True)
-        print(reponse.text[:1500], flush=True)
-        raise SystemExit("Appel API échoué.")
+            if reponse.status_code == 200:
+                candidat = reponse.json()["candidates"][0]
+                print(f"OK via {modele} (essai {essai})", flush=True)
+                return candidat["content"]["parts"][0]["text"].strip()
 
-    data = reponse.json()
-    candidat = data["candidates"][0]
-    raison = candidat.get("finishReason", "?")
-    print(f"finishReason : {raison}", flush=True)
-    if raison not in ("STOP", "?"):
-        print(f"[!] Réponse interrompue ({raison})", flush=True)
-    return candidat["content"]["parts"][0]["text"].strip()
+            print(f"{modele} essai {essai} : HTTP {reponse.status_code}", flush=True)
+
+            # 503/429 = surcharge passagère, on réessaie. Autre code = inutile d'insister.
+            if reponse.status_code not in (429, 500, 502, 503, 504):
+                print(reponse.text[:800], flush=True)
+                break
+
+            if essai < len(attentes):
+                time.sleep(pause)
+
+        print(f"Bascule vers le modèle suivant.", flush=True)
+
+    raise SystemExit("Tous les modèles ont échoué.")
+
+
 # --------------------------------------------------------------------------
 # 3. Écriture et envoi
 # --------------------------------------------------------------------------
