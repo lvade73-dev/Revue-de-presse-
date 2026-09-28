@@ -43,7 +43,7 @@ SOURCES = {
 }
 
 # Nombre max d'articles retenus par flux (les plus récents)
-MAX_PAR_FLUX = 8
+MAX_PAR_FLUX = 3
 
 # Fenêtre temporelle : on ne garde que les articles des N dernières heures
 FENETRE_HEURES = 26
